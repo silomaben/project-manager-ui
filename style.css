@@ -15,7 +15,6 @@ body {
   justify-content: center;
   background-color: #dcdbf6;
   color: white;
- 
 }
 
 .container {
@@ -48,6 +47,7 @@ body {
 #title-app {
   /* margin-left: 29%; */
   margin-bottom: 50px;
+  color: #212c45;
 }
 
 .add-project {
@@ -66,6 +66,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 7px;
+  align-items: center;
 }
 
 form #checkbox {
@@ -89,9 +90,37 @@ form #checkbox {
   width: 100%;
   bottom: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
+  gap: 30%;
   margin-bottom: 7px;
+  align-items: center;
+}
+#form-submit-btn {
+  padding: 10px 20px;
+  /* background-color: #858d96; */
+  /* color: #0c0c0c; */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 80px;
+  /* margin-left: 50%; */
+  align-items: center;
+  justify-content: center;
+}
+
+/* .controls-viewtask{
+    gap: 90px;
+} */
+
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .new-task-inner {
@@ -128,6 +157,12 @@ form #checkbox {
   color: #d0cef2;
   cursor: pointer;
   border-radius: 5px;
+}
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
 }
 
 /* @media (min-width: 768px) and (max-width: 1024px) {
@@ -174,21 +209,21 @@ form #checkbox {
   }
 } */
 
-
- @media (max-width: 1097px) {
-    body{
-        height: 190%;
-    }
+@media (max-width: 1097px) {
+  body {
+    height: 190%;
+  }
   .container {
     flex-direction: column;
-    margin: 1px; 
+    margin: 1px;
   }
 
   .projects-list,
   .view-tasks,
   .add-project {
     width: 100%;
-    margin: 1px; 
+    margin: 1px;
+    
   }
 
   .add-project {
@@ -200,5 +235,4 @@ form #checkbox {
     height: 50vh;
     margin-bottom: 20px;
   }
-} 
-
+}
