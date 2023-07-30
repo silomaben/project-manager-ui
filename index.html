@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="view-tasks">
+            <div class="users-container">
+
+            </div>
+
+            <div class="nav-lower">
+                
+                <div class="controls">
+                    <button class="buttons-nav" id="btn-all">All</button>
+                    <button class="buttons-nav" id="btn-active">Assigned</button>
+                    <button class="buttons-nav" id="btn-complete">Unassigned</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="add-project">
+            <h3 id="title-app">New Project</h3>
+            
+            <form id="projects-form">
+                <input type="text" id="title" placeholder="project title">
+                <input type="text" id="description" placeholder="project description">
+                <input type="date" id="deadline" placeholder="project deadline">
+                <input type="submit"  value="Submit" id="form-submit-btn">
+                <button id='submit-btn' style="display: none;">update</button>
+            </form>
+            
+        </div>
+        <div class="projects-list">
+            <div class="projects-container">
+
+            </div>
+
+            <div class="nav-lower">
+                <div class="items_left">2 projects running</div>
+                <div class="controls">
+                    <button class="buttons-nav" id="btn-all">All</button>
+                    <button class="buttons-nav" id="btn-active">Complete</button>
+                    <button class="buttons-nav" id="btn-complete">Running</button>
+                </div>
+            </div>
+        </div>
+       
+    <script src="script.js"></script>
+</body>
+</html>
